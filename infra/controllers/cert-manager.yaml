@@ -34,4 +34,9 @@ spec:
   interval: 1h
   # @ref https://artifacthub.io/packages/helm/cert-manager/cert-manager
   values:
-    installCRDs: true
+    config:
+      apiVersion: controller.config.cert-manager.io/v1alpha1
+      kind: ControllerConfiguration
+      enableGatewayAPI: true
+    crds:
+      enabled: true

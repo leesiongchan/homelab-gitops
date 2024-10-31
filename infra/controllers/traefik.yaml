@@ -34,11 +34,30 @@ spec:
   interval: 1h
   # @ref https://artifacthub.io/packages/helm/traefik/traefik
   values:
-    # Allow the Gateway to expose HTTPRoute from all namespaces
     gateway:
-      namespacePolicy: All
+      enabled: true
+      annotations:
+        cert-manager.io/cluster-issuer: letsencrypt
+      listeners:
+        websecure:
+          port: 8443
+          protocol: HTTPS
+          certificateRefs:
+            - name: o5s-lol-ca
+          hostname: "*.o5s.lol"
+          mode: Terminate
+          namespacePolicy: All
+    ingressRoute:
+      dashboard:
+        enabled: true
+        entryPoints: [websecure]
+        matchRule: Host(`o5s.lol`)
     providers:
       kubernetesGateway:
         enabled: true
       kubernetesIngress:
         enabled: false
+    tlsStore:
+      default:
+        defaultCertificate:
+          secretName: o5s-lol-ca
