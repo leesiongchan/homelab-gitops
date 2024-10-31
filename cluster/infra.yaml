@@ -46,6 +46,7 @@ spec:
   interval: 5m
   path: ./infra/routes
   prune: true
+  retryInterval: 1m
   sourceRef:
     kind: GitRepository
     name: flux-system

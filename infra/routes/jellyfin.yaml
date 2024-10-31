@@ -11,9 +11,7 @@ spec:
   rules:
     - matches:
       - path:
-          type: Exact
           value: /
       backendRefs:
         - name: jellyfin
-          namespace: jellyfin
           port: 8096

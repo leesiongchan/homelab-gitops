@@ -11,9 +11,7 @@ spec:
   rules:
     - matches:
       - path:
-          type: Exact
           value: /
       backendRefs:
         - name: weave-gitops
-          namespace: weave-gitops
           port: 9001
