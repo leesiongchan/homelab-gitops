@@ -18,9 +18,8 @@ spec:
   values:
     configMap:
       authentication_backend:
-        postgres:
+        file:
           enabled: true
-          deploy: true
       notifier:
         filesystem:
           enabled: true
@@ -29,5 +28,6 @@ spec:
           - domain: o5s.lol
             subdomain: auth
       storage:
-        local:
+        postgres:
           enabled: true
+          deploy: true
