@@ -6,7 +6,7 @@ metadata:
 spec:
   interval: 24h
   type: oci
-  url: oci://ghcr.io/traefik/helm/traefik
+  url: oci://ghcr.io/traefik/helm
 
 ---
 
