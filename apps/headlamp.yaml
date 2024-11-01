@@ -35,13 +35,13 @@ spec:
   interval: 1h
   # @ref https://github.com/headlamp-k8s/headlamp/tree/main/charts/headlamp
 
----
+# ---
 
-apiVersion: v1
-kind: Secret
-metadata:
-  annotations:
-    kubernetes.io/service-account.name: headlamp-admin
-  name: headlamp-admin-token
-  namespace: headlamp
-type: kubernetes.io/service-account-token
+# apiVersion: v1
+# kind: Secret
+# metadata:
+#   annotations:
+#     kubernetes.io/service-account.name: headlamp-admin
+#   name: headlamp-admin-token
+#   namespace: headlamp
+# type: kubernetes.io/service-account-token
