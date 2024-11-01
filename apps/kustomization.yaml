@@ -6,6 +6,7 @@ resources:
   - homepage.yaml
   - media/bazarr.yaml
   - media/jellyfin.yaml
+  - media/prowlarr.yaml
   - media/radarr.yaml
   - media/sonarr.yaml
   - weave-gitops.yaml
