@@ -29,5 +29,15 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: authelia
+      version: 0.x
   interval: 1h
   # @ref https://github.com/authelia/chartrepo/tree/master/charts/authelia
+  values:
+    configMap:
+      authentication_backend: file
+      notifier: filesystem
+      session:
+        cookies:
+          - domain: o5s.lol
+            subdomain: auth
+      storage: postgres
