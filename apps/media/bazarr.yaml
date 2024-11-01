@@ -18,7 +18,7 @@ spec:
     route:
       main:
         enabled: true
-        hostnames: [prowlarr.o5s.lol]
+        hostnames: [bazarr.o5s.lol]
         parentRefs:
           - name: traefik-gateway
             namespace: network
