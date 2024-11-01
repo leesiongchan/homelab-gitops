@@ -12,7 +12,8 @@ metadata:
   namespace: traefik
 spec:
   interval: 24h
-  url: https://traefik.github.io/charts
+  type: oci
+  url: oci://ghcr.io/traefik/helm/traefik
 
 ---
 
