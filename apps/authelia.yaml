@@ -34,10 +34,16 @@ spec:
   # @ref https://github.com/authelia/chartrepo/tree/master/charts/authelia
   values:
     configMap:
-      authentication_backend: file
-      notifier: filesystem
+      authentication_backend:
+        file:
+          enabled: true
+      notifier:
+        filesystem:
+          enabled: true
       session:
         cookies:
           - domain: o5s.lol
             subdomain: auth
-      storage: postgres
+      storage:
+        postgres:
+          enabled: true
