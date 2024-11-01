@@ -18,3 +18,10 @@ spec:
     metrics:
       main:
         enabled: false
+    route:
+      main:
+        enabled: true
+        hostnames: [sonarr.o5s.lol]
+        parentRefs:
+          - name: traefik-gateway
+            namespace: network

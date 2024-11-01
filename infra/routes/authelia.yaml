@@ -4,10 +4,10 @@ metadata:
   name: authelia
   namespace: auth
 spec:
+  hostnames: [auth.o5s.lol]
   parentRefs:
     - name: traefik-gateway
       namespace: network
-  hostnames: [auth.o5s.lol]
   rules:
     - matches:
       - path:
