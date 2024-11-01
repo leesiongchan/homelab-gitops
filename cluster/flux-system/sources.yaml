@@ -2,6 +2,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   name: authelia
+  namespace: flux-system
 spec:
   interval: 24h
   url: https://charts.authelia.com
@@ -12,6 +13,7 @@ metadata:
   labels:
     app.kubernetes.io/component: ui
   name: headlamp
+  namespace: flux-system
 spec:
   interval: 24h
   url: https://headlamp-k8s.github.io/headlamp
@@ -20,6 +22,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   name: jameswynn
+  namespace: flux-system
 spec:
   interval: 24h
   url: http://jameswynn.github.io/helm-charts
@@ -39,6 +42,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   name: jetstack
+  namespace: flux-system
 spec:
   interval: 24h
   url: https://charts.jetstack.io
@@ -47,6 +51,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   name: traefik
+  namespace: flux-system
 spec:
   interval: 24h
   type: oci
@@ -56,6 +61,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   name: truecharts
+  namespace: flux-system
 spec:
   interval: 24h
   type: oci
@@ -73,6 +79,7 @@ metadata:
     app.kubernetes.io/name: weave-gitops-dashboard
     app.kubernetes.io/part-of: weave-gitops
   name: weave-gitops
+  namespace: flux-system
 spec:
   interval: 24h
   type: oci
