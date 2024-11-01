@@ -18,8 +18,9 @@ spec:
   values:
     configMap:
       authentication_backend:
-        file:
+        postgres:
           enabled: true
+          deploy: true
       notifier:
         filesystem:
           enabled: true
