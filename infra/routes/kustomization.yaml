@@ -5,4 +5,5 @@ resources:
   - headlamp.yaml
   - homepage.yaml
   - jellyfin.yaml
+  - radarr.yaml
   - weave-gitops.yaml
