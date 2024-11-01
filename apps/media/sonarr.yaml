@@ -14,3 +14,6 @@ spec:
         namespace: flux-system
   interval: 1h
   # @ref https://github.com/truecharts/public/tree/master/charts/stable/sonarr
+  values:
+    metrics:
+      enabled: false
