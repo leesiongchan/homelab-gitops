@@ -58,8 +58,8 @@ spec:
     ingressRoute:
       dashboard:
         enabled: true
-        # entryPoints: [websecure]
-        # matchRule: Host(`o5s.lol`)
+        entryPoints: [websecure]
+        matchRule: Host(`o5s.lol`)
     providers:
       kubernetesGateway:
         enabled: true
