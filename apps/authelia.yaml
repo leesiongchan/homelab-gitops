@@ -30,4 +30,4 @@ spec:
         kind: HelmRepository
         name: authelia
   interval: 1h
-  # @ref https://github.com/authelia-k8s/authelia/tree/main/charts/authelia
+  # @ref https://github.com/authelia/chartrepo/tree/master/charts/authelia
