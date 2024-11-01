@@ -16,4 +16,5 @@ spec:
   # @ref https://github.com/truecharts/public/tree/master/charts/stable/prowlarr
   values:
     metrics:
-      enabled: false
+      main:
+        enabled: false
