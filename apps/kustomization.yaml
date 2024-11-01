@@ -4,6 +4,8 @@ resources:
   - auth/authelia.yaml
   - headlamp.yaml
   - homepage.yaml
+  - media/bazarr.yaml
   - media/jellyfin.yaml
+  - media/radarr.yaml
   - media/sonarr.yaml
   - weave-gitops.yaml

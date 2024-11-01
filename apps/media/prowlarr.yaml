@@ -1,16 +1,16 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: sonarr
+  name: prowlarr
   namespace: media
 spec:
   chart:
     spec:
-      chart: sonarr
+      chart: prowlarr
       interval: 12h
       sourceRef:
         kind: HelmRepository
         name: truecharts
         namespace: flux-system
   interval: 1h
-  # @ref https://github.com/truecharts/public/tree/master/charts/stable/sonarr
+  # @ref https://github.com/truecharts/public/tree/master/charts/stable/prowlarr

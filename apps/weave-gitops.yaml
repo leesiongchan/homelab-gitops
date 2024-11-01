@@ -15,7 +15,6 @@ spec:
         kind: HelmRepository
         name: weave-gitops
         namespace: flux-system
-      version: 4.x
   interval: 1h
   # @ref https://github.com/weaveworks/weave-gitops/tree/main/charts/gitops-server
   values:
