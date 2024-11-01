@@ -28,5 +28,5 @@ spec:
           - domain: o5s.lol
             subdomain: auth
       storage:
-        postgres:
+        local:
           enabled: true
