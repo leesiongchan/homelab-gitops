@@ -39,6 +39,14 @@ spec:
       annotations:
         cert-manager.io/cluster-issuer: letsencrypt
       listeners:
+        websecure-root:
+          port: 8443
+          protocol: HTTPS
+          certificateRefs:
+            - name: o5s-lol-ca
+          hostname: o5s.lol
+          mode: Terminate
+          namespacePolicy: All
         websecure:
           port: 8443
           protocol: HTTPS
@@ -50,8 +58,8 @@ spec:
     ingressRoute:
       dashboard:
         enabled: true
-        entryPoints: [websecure]
-        matchRule: Host(`o5s.lol`)
+        # entryPoints: [websecure]
+        # matchRule: Host(`o5s.lol`)
     providers:
       kubernetesGateway:
         enabled: true
