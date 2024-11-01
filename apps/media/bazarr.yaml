@@ -14,11 +14,3 @@ spec:
         namespace: flux-system
   interval: 1h
   # @ref https://github.com/truecharts/public/tree/master/charts/stable/bazarr
-  values:
-    route:
-      main:
-        enabled: true
-        hostnames: [bazarr.o5s.lol]
-        parentRefs:
-          - name: traefik-gateway
-            namespace: network
