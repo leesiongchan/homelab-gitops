@@ -3,5 +3,6 @@ kind: Kustomization
 resources:
   - authelia.yaml
   - headlamp.yaml
+  - homepage.yaml
   - jellyfin.yaml
   - weave-gitops.yaml

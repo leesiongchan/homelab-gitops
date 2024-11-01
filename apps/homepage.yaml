@@ -1,15 +1,3 @@
-apiVersion: source.toolkit.fluxcd.io/v1
-kind: HelmRepository
-metadata:
-  labels:
-    app.kubernetes.io/component: ui
-  name: jameswynn
-spec:
-  interval: 24h
-  url: http://jameswynn.github.io/helm-charts
-
----
-
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
@@ -17,10 +5,11 @@ metadata:
 spec:
   chart:
     spec:
-      chart: jameswynn/homepage
+      chart: homepage
       interval: 12h
       sourceRef:
         kind: HelmRepository
         name: jameswynn
+        namespace: flux-system
   interval: 1h
   # @ref https://github.com/jameswynn/helm-charts/tree/main/charts/homepage
