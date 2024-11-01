@@ -8,10 +8,3 @@ spec:
     - name: traefik-gateway
       namespace: network
   hostnames: [radarr.o5s.lol]
-  rules:
-    - matches:
-      - path:
-          value: /
-      backendRefs:
-        - name: radarr
-          port: 8096
